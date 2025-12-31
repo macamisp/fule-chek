@@ -1,4 +1,4 @@
-# FuelChek - Advanced Fuel & Mileage Tracker 🚗⛽
+# FuelChek - Advanced Fuel & Mileage Tracker v2.0 🚗⛽
 
 **FuelChek** is a modern, full-stack web application designed to help vehicle owners track their fuel consumption, calculate mileage, and monitor maintenance schedules. Built with a focus on usability and aesthetics, it features a glassmorphism-inspired UI and comprehensive analytics.
 
@@ -18,6 +18,11 @@
     *   Dark/Light mode ready aesthetics.
 *   **Secure Authentication**: JWT-based login and registration system.
 *   **Admin System**: Special super-admin privileges.
+
+### 🌟 New in v2.0
+*   **Mindful UI Theme**: A completely redesigned "Mindful Nature" interface using calming Teals, warm Oranges, and dark glassmorphism.
+*   **Analytics Dashboard**: Visual charts for mileage trends and cost history.
+*   **Service Reminders**: Dedicated module to track and update maintenance schedules.
 
 ## 🛠️ Tech Stack
 
