@@ -1,0 +1,155 @@
+# 🚗📊 Project Plan: **Fuel & Mileage Tracker System**
+
+---
+
+## 1️⃣ Project Overview
+
+**Problem:**
+Vehicle owners don’t clearly know:
+* Real fuel mileage (km per liter)
+* Monthly fuel cost
+* When service is due
+
+**Solution:**
+A **Fuel & Mileage Tracker App** that:
+* Records fuel fills
+* Calculates real mileage automatically
+* Shows fuel cost analytics
+* Sends service reminders
+
+**Target Users:**
+* Bike owners (Hero Xtreme, Honda, Bajaj)
+* Car & tuk-tuk drivers
+* Delivery riders
+
+---
+
+## 2️⃣ Key Features
+
+### 🔹 Core Features (MVP)
+* User login & profile
+* Add vehicle (bike/car)
+* Add fuel entry:
+  * Date
+  * Odometer reading
+  * Fuel liters
+  * Cost (LKR)
+* Automatic mileage calculation (km/L)
+* Fuel history list
+* Monthly fuel expense report
+
+### 🔹 Advanced Features
+* Service reminder (oil change, chain, tires)
+* Average mileage trends (chart)
+* Export data to PDF/Excel
+* Multi-vehicle support
+* Cloud backup
+
+### 🔹 Optional AI Feature
+* Predict next service date using mileage history
+
+---
+
+## 3️⃣ Technology Stack (Recommended)
+
+### 📱 Mobile App (Best Option)
+* **Frontend:** Flutter
+* **Backend:** Firebase (Auth + Firestore)
+* **Charts:** Flutter charts package
+
+### 🌐 OR Web App
+* **Frontend:** React.js
+* **Backend:** Node.js + Express
+* **Database:** MongoDB
+* **Auth:** JWT / Firebase Auth
+
+> ✅ Flutter is ideal if you want Android + iOS support.
+
+---
+
+## 4️⃣ System Architecture
+
+```
+User → Mobile/Web App
+        ↓
+   Authentication
+        ↓
+   Fuel Data Storage
+        ↓
+ Mileage Calculation Engine
+        ↓
+ Charts & Reports
+```
+
+---
+
+## 5️⃣ Database Design (Simplified)
+
+### 👤 Users
+```
+user_id
+name
+email
+```
+
+### 🚘 Vehicles
+```
+vehicle_id
+user_id
+vehicle_name
+vehicle_type
+```
+
+### ⛽ Fuel_Records
+```
+record_id
+vehicle_id
+date
+odometer
+liters
+cost
+```
+
+---
+
+## 6️⃣ Mileage Calculation Logic
+```
+Mileage = (Current Odometer - Previous Odometer) / Fuel Liters
+```
+
+Average Mileage:
+```
+Total Distance / Total Fuel
+```
+
+---
+
+## 7️⃣ UI Screens
+1. Login / Register
+2. Dashboard (Mileage + Cost summary)
+3. Add Fuel Entry
+4. Fuel History
+5. Reports & Charts
+6. Settings & Reminders
+
+---
+
+## 8️⃣ Development Timeline (4 Weeks)
+
+### Week 1
+* Requirements & UI design
+* Project setup
+* Authentication
+
+### Week 2
+* Fuel entry & storage
+* Mileage calculation logic
+
+### Week 3
+* Reports & charts
+* Service reminder system
+
+### Week 4
+* Testing
+* Bug fixing
+* Final deployment
